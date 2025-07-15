@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Star } from "lucide-react"
 
 export default function TestimonialsSection() {
@@ -15,7 +16,7 @@ export default function TestimonialsSection() {
       name: "Jason Mitchell",
       title: "Agency Manager",
       content:
-        "I wasn't sure how it would work, but their agents do a great job qualifying and closing leads. Getting weekly updates keeps me in the loop and builds a lot of trust.",
+        "I wasn&apos;t sure how it would work, but their agents do a great job qualifying and closing leads. Getting weekly updates keeps me in the loop and builds a lot of trust.",
       rating: 5,
       avatar:
         "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
@@ -24,7 +25,7 @@ export default function TestimonialsSection() {
       name: "Sandra Lopez",
       title: "Marketing Director",
       content:
-        "These guys really get how insurance sales work. They don't just hand over cold leads, they nurture and close them. Our conversion rate has improved a lot.",
+        "These guys really get how insurance sales work. They don&apos;t just hand over cold leads, they nurture and close them. Our conversion rate has improved a lot.",
       rating: 5,
       avatar:
         "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
@@ -33,7 +34,7 @@ export default function TestimonialsSection() {
       name: "Robert Nguyen",
       title: "Principal Agent",
       content:
-        "It's like having an extra sales team without the hassle of hiring. The clients they send us are already interested and ready to move forward.",
+        "It&apos;s like having an extra sales team without the hassle of hiring. The clients they send us are already interested and ready to move forward.",
       rating: 5,
       avatar:
         "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80",
@@ -42,7 +43,7 @@ export default function TestimonialsSection() {
       name: "Linda Thompson",
       title: "Founder",
       content:
-        "The no-contract option made it easy to try them out. Now I can't imagine going back to buying unqualified leads. This is a game changer.",
+        "The no-contract option made it easy to try them out. Now I can&apos;t imagine going back to buying unqualified leads. This is a game changer.",
       rating: 5,
       avatar:
         "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=1061&q=80",
@@ -51,7 +52,7 @@ export default function TestimonialsSection() {
       name: "David Patel",
       title: "CEO",
       content:
-        "Since we started, our sales cycle has gotten much shorter. Their team's ability to close before handing off really speeds things up.",
+        "Since we started, our sales cycle has gotten much shorter. Their team&apos;s ability to close before handing off really speeds things up.",
       rating: 5,
       avatar:
         "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80",
@@ -64,7 +65,7 @@ export default function TestimonialsSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Proof from Experience</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Don't just take our word for it. Here's what our clients say about working with Agmen Marketing.
+            Don&apos;t just take our word for it. Here&apos;s what our clients say about working with Agmen Marketing.
           </p>
         </div>
 
@@ -78,12 +79,14 @@ export default function TestimonialsSection() {
                 ))}
               </div>
 
-              <p className="text-gray-700 mb-6 leading-relaxed">"{testimonial.content}"</p>
+              <p className="text-gray-700 mb-6 leading-relaxed">&quot;{testimonial.content}&quot;</p>
 
               <div className="flex items-center">
-                <img
+                <Image
                   src={testimonial.avatar || "/placeholder.svg"}
                   alt={testimonial.name}
+                  width={48}
+                  height={48}
                   className="w-12 h-12 rounded-full mr-4 object-cover"
                 />
                 <div>
@@ -101,27 +104,33 @@ export default function TestimonialsSection() {
             <h3 className="text-3xl font-bold text-gray-900 mb-6">We share everything (except our cookies)</h3>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white rounded-xl p-6">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1887&q=80"
                   alt="Professional team meeting"
+                  width={1887}
+                  height={80}
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
                 <h4 className="font-semibold text-gray-900">Our dedicated team</h4>
                 <p className="text-sm text-gray-600">Licensed professionals working for your success</p>
               </div>
               <div className="bg-white rounded-xl p-6">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
                   alt="Transparent reporting dashboard"
+                  width={2070}
+                  height={80}
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
                 <h4 className="font-semibold text-gray-900">Transparent process</h4>
                 <p className="text-sm text-gray-600">Weekly reports and full visibility into our work</p>
               </div>
               <div className="bg-white rounded-xl p-6">
-                <img
+                <Image
                   src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2015&q=80"
                   alt="Results and analytics"
+                  width={2015}
+                  height={80}
                   className="w-full h-48 object-cover rounded-lg mb-4"
                 />
                 <h4 className="font-semibold text-gray-900">Results-driven approach</h4>

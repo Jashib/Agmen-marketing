@@ -1,6 +1,7 @@
 "use client"
 
 import type React from "react"
+import Image from "next/image"
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
@@ -27,18 +28,18 @@ export default function HeroSection() {
           <div className="space-y-8">
             <div className="space-y-6">
               <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                We Don't Just Send Leads - We Deliver <span className="text-orange-500">Ready-to-Sign</span> Insurance
+                We Don&apos;t Just Send Leads - We Deliver <span className="text-orange-500">Ready-to-Sign</span> Insurance
                 Clients
               </h1>
 
               <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
                 Tired of chasing cold leads? Our licensed agents qualify and close prospects for you - so you get
-                clients, not just contacts. It's the last marketing system your insurance agency will ever need.
+                clients, not just contacts. It&apos;s the last marketing system your insurance agency will ever need.
               </p>
 
               <div className="space-y-4">
                 <p className="text-lg font-semibold text-gray-900">
-                  <span className="text-orange-500">Our goal:</span> To be the last marketing agency you'll ever need to
+                  <span className="text-orange-500">Our goal:</span> To be the last marketing agency you&apos;ll ever need to
                   hire. Ever.
                 </p>
               </div>
@@ -207,21 +208,27 @@ export default function HeroSection() {
                 <p className="text-lg text-gray-700 mb-4">Trusted by leading companies</p>
                 <div className="flex justify-end items-center space-x-6 opacity-60">
                   {/* Microsoft Logo */}
-                  <img
+                  <Image
                     src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
                     alt="Microsoft"
+                    width={100}
+                    height={100}
                     className="h-8 w-auto grayscale hover:grayscale-0 transition-all duration-300"
                   />
                   {/* Google Logo */}
-                  <img
+                  <Image
                     src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
                     alt="Google"
+                    width={100}
+                    height={100}
                     className="h-8 w-auto grayscale hover:grayscale-0 transition-all duration-300"
                   />
                   {/* Amazon Logo */}
-                  <img
+                  <Image
                     src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
                     alt="Amazon"
+                    width={100}
+                    height={100}
                     className="h-6 w-auto grayscale hover:grayscale-0 transition-all duration-300"
                   />
                 </div>

@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 export default function AboutSection() {
   return (
@@ -12,16 +13,20 @@ export default function AboutSection() {
                 <h3 className="text-2xl font-bold">Your web marketing, qualified, optimized, efficient</h3>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-gray-800 rounded-lg p-4">
-                    <img
+                    <Image
                       src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
                       alt="Team collaboration dashboard"
+                      width={2070}
+                      height={80}
                       className="w-full h-24 object-cover rounded"
                     />
                   </div>
                   <div className="bg-gray-800 rounded-lg p-4">
-                    <img
+                    <Image
                       src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80"
                       alt="Analytics and reporting"
+                      width={2015}
+                      height={80}
                       className="w-full h-24 object-cover rounded"
                     />
                   </div>
@@ -46,9 +51,9 @@ export default function AboutSection() {
 
             <div className="space-y-6">
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">We Don't Just Market — We Close.</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">We Don&apos;t Just Market — We Close.</h3>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  At Agmen Marketing, we're more than a marketing provider, we're your partner in scaling your insurance
+                  At Agmen Marketing, we&apos;re more than a marketing provider, we&apos;re your partner in scaling your insurance
                   agency with pre-closed clients, not just leads.
                 </p>
               </div>
@@ -71,7 +76,7 @@ export default function AboutSection() {
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-3xl font-bold text-gray-900 mb-6">Our Philosophy: Flexibility, Built on Trust</h3>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              We understand that no one wants to be locked into something that doesn't deliver. That's why you can
+              We understand that no one wants to be locked into something that doesn&apos;t deliver. That&apos;s why you can
               choose to work with us with or without a contract. Whether you prefer structure or flexibility, our focus
               stays the same: delivering real results, real clients, and a system that proves its value on its own.
             </p>

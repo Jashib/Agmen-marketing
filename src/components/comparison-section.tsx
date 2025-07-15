@@ -63,7 +63,7 @@ export default function ComparisonSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Here's why so many companies choose Agmen Marketing
+            Here&apos;s why so many companies choose Agmen Marketing
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Compare our comprehensive solution with traditional approaches
@@ -137,7 +137,7 @@ export default function ComparisonSection() {
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-4">Pre-Closed Clients</h3>
             <p className="text-gray-600">
-              We don't just send leads - we deliver clients ready to sign with your agency.
+              We don&apos;t just send leads - we deliver clients ready to sign with your agency.
             </p>
           </div>
         </div>
