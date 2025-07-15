@@ -1,4 +1,43 @@
 export default function ServicesSection() {
+  const portfolioItems = [
+    {
+      image:
+        "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
+      title: "Insurance Lead Generation",
+      description: "Targeted campaigns for qualified prospects",
+    },
+    {
+      image:
+        "https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
+      title: "Sales Process Optimization",
+      description: "Streamlined closing procedures",
+    },
+    {
+      image:
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2187&q=80",
+      title: "Client Relationship Management",
+      description: "CRM integration and management",
+    },
+    {
+      image:
+        "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
+      title: "Performance Analytics",
+      description: "Weekly reporting and insights",
+    },
+    {
+      image:
+        "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
+      title: "Multi-Channel Marketing",
+      description: "Comprehensive digital strategy",
+    },
+    {
+      image:
+        "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
+      title: "Licensed Agent Support",
+      description: "Professional sales assistance",
+    },
+  ];
+
   return (
     <section className="py-20 bg-stone-50">
       <div className="container mx-auto px-4">
@@ -12,44 +51,7 @@ export default function ServicesSection() {
 
         {/* Portfolio Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-          {[
-            {
-              image:
-                "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
-              title: "Insurance Lead Generation",
-              description: "Targeted campaigns for qualified prospects",
-            },
-            {
-              image:
-                "https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
-              title: "Sales Process Optimization",
-              description: "Streamlined closing procedures",
-            },
-            {
-              image:
-                "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2187&q=80",
-              title: "Client Relationship Management",
-              description: "CRM integration and management",
-            },
-            {
-              image:
-                "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
-              title: "Performance Analytics",
-              description: "Weekly reporting and insights",
-            },
-            {
-              image:
-                "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
-              title: "Multi-Channel Marketing",
-              description: "Comprehensive digital strategy",
-            },
-            {
-              image:
-                "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2340&q=80",
-              title: "Licensed Agent Support",
-              description: "Professional sales assistance",
-            },
-          ].map((item, index) => (
+          {portfolioItems.map((item, index) => (
             <div key={index} className="group cursor-pointer">
               <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300">
                 <div className="aspect-video bg-gradient-to-br from-blue-100 to-purple-100 relative overflow-hidden">
@@ -94,7 +96,7 @@ export default function ServicesSection() {
               </div>
               <h4 className="text-xl font-bold text-gray-900 mb-4">Custom Offers & Closing</h4>
               <p className="text-gray-600 leading-relaxed">
-                You create personalized offers based on each prospect's needs. Our agents then book appointments and
+                You create personalized offers based on each prospect&apos;s needs. Our agents then book appointments and
                 help close the sale before handing the client over to you.
               </p>
             </div>
@@ -108,7 +110,7 @@ export default function ServicesSection() {
               <h4 className="text-xl font-bold text-gray-900 mb-4">Transparent Weekly Reporting</h4>
               <p className="text-gray-600 leading-relaxed">
                 To build trust and keep you informed, we send a detailed letter to your office every week outlining the
-                new clients we've delivered.
+                new clients we&apos;ve delivered.
               </p>
             </div>
           </div>
