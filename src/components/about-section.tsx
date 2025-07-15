@@ -1,0 +1,95 @@
+import { Button } from "@/components/ui/button"
+
+export default function AboutSection() {
+  return (
+    <section className="py-20 bg-white">
+      <div className="container mx-auto px-4">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Left Column - Image */}
+          <div className="relative">
+            <div className="bg-gray-900 rounded-2xl p-8 text-white">
+              <div className="space-y-6">
+                <h3 className="text-2xl font-bold">Your web marketing, qualified, optimized, efficient</h3>
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-gray-800 rounded-lg p-4">
+                    <img
+                      src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                      alt="Team collaboration dashboard"
+                      className="w-full h-24 object-cover rounded"
+                    />
+                  </div>
+                  <div className="bg-gray-800 rounded-lg p-4">
+                    <img
+                      src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80"
+                      alt="Analytics and reporting"
+                      className="w-full h-24 object-cover rounded"
+                    />
+                  </div>
+                </div>
+                <div className="bg-orange-500 rounded-lg p-4">
+                  <div className="text-center">
+                    <div className="text-3xl font-bold">95%</div>
+                    <div className="text-sm">Close Rate</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column - Content */}
+          <div className="space-y-8">
+            <div>
+              <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                Your client pipeline, qualified, closed, delivered.
+              </h2>
+            </div>
+
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">We Don't Just Market — We Close.</h3>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  At Agmen Marketing, we're more than a marketing provider, we're your partner in scaling your insurance
+                  agency with pre-closed clients, not just leads.
+                </p>
+              </div>
+
+              <p className="text-lg text-gray-600 leading-relaxed">
+                With deep expertise in digital strategy, lead qualification, and high-converting sales systems, we help
+                forward-thinking insurance agencies grow faster, smoother, and smarter. Our mission? To deliver a
+                transparent, ROI-driven system that actually works — because when you win, we win.
+              </p>
+            </div>
+
+            <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 text-lg font-semibold rounded-full">
+              Learn More About Us →
+            </Button>
+          </div>
+        </div>
+
+        {/* Philosophy Section */}
+        <div className="mt-20 bg-stone-50 rounded-3xl p-12">
+          <div className="max-w-4xl mx-auto text-center">
+            <h3 className="text-3xl font-bold text-gray-900 mb-6">Our Philosophy: Flexibility, Built on Trust</h3>
+            <p className="text-lg text-gray-600 leading-relaxed mb-8">
+              We understand that no one wants to be locked into something that doesn't deliver. That's why you can
+              choose to work with us with or without a contract. Whether you prefer structure or flexibility, our focus
+              stays the same: delivering real results, real clients, and a system that proves its value on its own.
+            </p>
+
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 text-lg font-semibold rounded-full">
+                Start Without Contract →
+              </Button>
+              <Button
+                variant="outline"
+                className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-4 text-lg font-semibold rounded-full bg-transparent"
+              >
+                View Contract Options
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
