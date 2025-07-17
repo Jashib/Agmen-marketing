@@ -41,16 +41,16 @@ export default function ServicesSection() {
   return (
     <section className="py-20 bg-stone-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        {/* <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Some recent creations</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             We create a custom system designed around the insurance services you offer, turning leads into
             pre-qualified, closed clients ready for your agency.
           </p>
-        </div>
+        </div> */}
 
         {/* Portfolio Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+        {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {portfolioItems.map((item, index) => (
             <div key={index} className="group cursor-pointer">
               <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300">
@@ -68,7 +68,7 @@ export default function ServicesSection() {
               </div>
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* Our Services */}
         <div className="bg-white rounded-3xl p-12">

@@ -187,55 +187,6 @@ export default function HeroSection() {
         </div>
 
         {/* Bottom section with gradient */}
-        <div className="mt-20">
-          <div className="bg-gradient-to-r from-amber-100 via-orange-100 to-amber-100 rounded-3xl p-12">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">3000+ companies</h3>
-                <p className="text-lg text-gray-700 mb-6">trust us with their growth</p>
-                <div className="flex items-center space-x-6">
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-orange-500">$50M+</div>
-                    <div className="text-sm text-gray-600">Revenue Generated</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-3xl font-bold text-orange-500">500+</div>
-                    <div className="text-sm text-gray-600">Clients Delivered</div>
-                  </div>
-                </div>
-              </div>
-              <div className="text-right">
-                <p className="text-lg text-gray-700 mb-4">Trusted by leading companies</p>
-                <div className="flex justify-end items-center space-x-6 opacity-60">
-                  {/* Microsoft Logo */}
-                  <Image
-                    src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
-                    alt="Microsoft"
-                    width={100}
-                    height={100}
-                    className="h-8 w-auto grayscale hover:grayscale-0 transition-all duration-300"
-                  />
-                  {/* Google Logo */}
-                  <Image
-                    src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
-                    alt="Google"
-                    width={100}
-                    height={100}
-                    className="h-8 w-auto grayscale hover:grayscale-0 transition-all duration-300"
-                  />
-                  {/* Amazon Logo */}
-                  <Image
-                    src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
-                    alt="Amazon"
-                    width={100}
-                    height={100}
-                    className="h-6 w-auto grayscale hover:grayscale-0 transition-all duration-300"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   )

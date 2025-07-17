@@ -14,7 +14,7 @@ export default function AboutSection() {
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-gray-800 rounded-lg p-4">
                     <Image
-                      src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                      src="/images/team-collaboration.avif"
                       alt="Team collaboration dashboard"
                       width={2070}
                       height={80}
@@ -23,7 +23,7 @@ export default function AboutSection() {
                   </div>
                   <div className="bg-gray-800 rounded-lg p-4">
                     <Image
-                      src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2015&q=80"
+                      src="/images/work-team.avif"
                       alt="Analytics and reporting"
                       width={2015}
                       height={80}

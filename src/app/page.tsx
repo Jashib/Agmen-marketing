@@ -11,12 +11,24 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white">
       <Navigation />
-      <HeroSection />
-      <AboutSection />
-      <ServicesSection />
-      <ComparisonSection />
-      <TestimonialsSection />
-      <CTASection />
+      <section id="hero">
+        <HeroSection />
+      </section>
+      <section id="about">
+        <AboutSection />
+      </section>
+      <section id="services">
+        <ServicesSection />
+      </section>
+      <section id="comparison">
+        <ComparisonSection />
+      </section>
+      <section id="testimonials">
+        <TestimonialsSection />
+      </section>
+      <section id="cta">
+        <CTASection />
+      </section>
       <Footer />
     </main>
   )

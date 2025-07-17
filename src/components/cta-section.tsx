@@ -20,9 +20,11 @@ export default function CTASection() {
             </p>
 
             <div className="space-y-6">
-              <Button className="bg-orange-500 hover:bg-orange-600 text-white px-12 py-4 text-lg font-semibold rounded-full">
-                Book your free discovery call today! →
-              </Button>
+              <a href="https://calendly.com/jay-agmen-marketing/30min" target="_blank" rel="noopener noreferrer" >
+                <Button className="bg-orange-500 hover:bg-orange-600 text-white px-12 py-4 text-lg font-semibold rounded-full mb-5">
+                  Book your free discovery call today! →
+                </Button>
+              </a>
 
               <div className="bg-green-500/20 border border-green-400/30 rounded-2xl p-6 backdrop-blur-sm max-w-2xl mx-auto">
                 <h4 className="text-xl font-bold mb-2">🎯 Our 90-Day Growth Guarantee</h4>

@@ -83,7 +83,7 @@ export default function TestimonialsSection() {
 
               <div className="flex items-center">
                 <Image
-                  src={testimonial.avatar || "/placeholder.svg"}
+                  src={ "/placeholder.svg"}
                   alt={testimonial.name}
                   width={48}
                   height={48}
@@ -105,7 +105,7 @@ export default function TestimonialsSection() {
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white rounded-xl p-6">
                 <Image
-                  src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1887&q=80"
+                  src="/images/team-meeting.avif"
                   alt="Professional team meeting"
                   width={1887}
                   height={80}
@@ -116,7 +116,7 @@ export default function TestimonialsSection() {
               </div>
               <div className="bg-white rounded-xl p-6">
                 <Image
-                  src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+                  src="/images/team-collaboration.avif"
                   alt="Transparent reporting dashboard"
                   width={2070}
                   height={80}
@@ -127,7 +127,7 @@ export default function TestimonialsSection() {
               </div>
               <div className="bg-white rounded-xl p-6">
                 <Image
-                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=2015&q=80"
+                  src="/images/work-team.avif"
                   alt="Results and analytics"
                   width={2015}
                   height={80}

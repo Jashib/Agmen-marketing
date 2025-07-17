@@ -21,10 +21,10 @@ export default function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             <a href="#services" className="text-gray-700 hover:text-gray-900 font-medium transition-colors">
-              Services
-            </a>
-            <a href="#process" className="text-gray-700 hover:text-gray-900 font-medium transition-colors">
               Process
+            </a>
+            <a href="#comparison" className="text-gray-700 hover:text-gray-900 font-medium transition-colors">
+              Comparision
             </a>
             <a href="#testimonials" className="text-gray-700 hover:text-gray-900 font-medium transition-colors">
               Case Studies
@@ -32,9 +32,11 @@ export default function Navigation() {
             <a href="#about" className="text-gray-700 hover:text-gray-900 font-medium transition-colors">
               About
             </a>
-            <Button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium">
-              Schedule a call →
-            </Button>
+            <a href="https://calendly.com/jay-agmen-marketing/30min" target="_blank" rel="noopener noreferrer">
+              <Button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium">
+                Schedule a call →
+              </Button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -50,10 +52,10 @@ export default function Navigation() {
           <div className="md:hidden py-4 border-t border-gray-100">
             <div className="flex flex-col space-y-4">
               <a href="#services" className="text-gray-700 font-medium">
-                Services
-              </a>
-              <a href="#process" className="text-gray-700 font-medium">
                 Process
+              </a>
+              <a href="#comparison" className="text-gray-700 hover:text-gray-900 font-medium transition-colors">
+              Comparision
               </a>
               <a href="#testimonials" className="text-gray-700 font-medium">
                 Case Studies
@@ -61,9 +63,11 @@ export default function Navigation() {
               <a href="#about" className="text-gray-700 font-medium">
                 About
               </a>
-              <Button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium w-fit">
-                Schedule a call →
-              </Button>
+              <a href="https://calendly.com/jay-agmen-marketing/30min" target="_blank" rel="noopener noreferrer">
+                <Button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium w-fit">
+                  Schedule a call →
+                </Button>
+              </a>
             </div>
           </div>
         )}
