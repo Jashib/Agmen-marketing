@@ -63,7 +63,7 @@ export default function ComparisonSection() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-            Here&apos;s why so many companies choose Agmen Marketing
+            Here is why so many companies choose Agmen Marketing
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Compare our comprehensive solution with traditional approaches
@@ -77,7 +77,7 @@ export default function ComparisonSection() {
               <thead>
                 <tr className="bg-gray-50 border-b border-gray-200">
                   <th className="text-left py-4 px-6 font-bold text-gray-900">Feature</th>
-                  <th className="text-left py-4 px-6 font-bold text-orange-500">Agmen Marketing</th>
+                  <th className="text-left py-4 px-6 font-bold text-blue-500">Agmen Marketing</th>
                   <th className="text-left py-4 px-6 font-bold text-gray-700">In-House Teams</th>
                   <th className="text-left py-4 px-6 font-bold text-gray-700">Other Agencies</th>
                 </tr>
@@ -114,16 +114,16 @@ export default function ComparisonSection() {
         {/* Key Benefits */}
         <div className="mt-16 grid md:grid-cols-3 gap-8">
           <div className="bg-stone-50 rounded-2xl p-8 text-center">
-            <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Check className="w-8 h-8 text-orange-500" />
+            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Check className="w-8 h-8 text-blue-500" />
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-4">No Long-Term Contracts</h3>
             <p className="text-gray-600">Flexible packages that adapt to your needs. Prove our value month by month.</p>
           </div>
 
           <div className="bg-stone-50 rounded-2xl p-8 text-center">
-            <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Check className="w-8 h-8 text-orange-500" />
+            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Check className="w-8 h-8 text-blue-500" />
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-4">Licensed Sales Agents</h3>
             <p className="text-gray-600">
@@ -132,12 +132,12 @@ export default function ComparisonSection() {
           </div>
 
           <div className="bg-stone-50 rounded-2xl p-8 text-center">
-            <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
-              <Check className="w-8 h-8 text-orange-500" />
+            <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Check className="w-8 h-8 text-blue-500" />
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-4">Pre-Closed Clients</h3>
             <p className="text-gray-600">
-              We don&apos;t just send leads - we deliver clients ready to sign with your agency.
+              We do not just send leads - we deliver clients ready to sign with your agency.
             </p>
           </div>
         </div>

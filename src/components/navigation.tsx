@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import Image from "next/image"
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -12,9 +13,16 @@ export default function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex items-center space-x-2">
+            <Image 
+              src="/images/agmen-logo.png"
+              alt="Agmen Marketing Logo"
+              width={40}
+              height={40}
+              className="w-auto h-8"
+            />
             <span className="text-2xl font-bold text-gray-900">
-              agmen<span className="text-orange-500">.</span>
+              Agmen Marketing<span className="text-blue-500">.</span>
             </span>
           </div>
 
@@ -24,7 +32,7 @@ export default function Navigation() {
               Process
             </a>
             <a href="#comparison" className="text-gray-700 hover:text-gray-900 font-medium transition-colors">
-              Comparision
+              Comparison
             </a>
             <a href="#testimonials" className="text-gray-700 hover:text-gray-900 font-medium transition-colors">
               Case Studies
@@ -32,8 +40,8 @@ export default function Navigation() {
             <a href="#about" className="text-gray-700 hover:text-gray-900 font-medium transition-colors">
               About
             </a>
-            <a href="https://calendly.com/jay-agmen-marketing/30min" target="_blank" rel="noopener noreferrer">
-              <Button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium">
+            <a href="https://calendly.com/jay-agmen-marketing/30min" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+              <Button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium">
                 Schedule a call →
               </Button>
             </a>
@@ -55,7 +63,7 @@ export default function Navigation() {
                 Process
               </a>
               <a href="#comparison" className="text-gray-700 hover:text-gray-900 font-medium transition-colors">
-              Comparision
+                Comparison
               </a>
               <a href="#testimonials" className="text-gray-700 font-medium">
                 Case Studies
@@ -63,8 +71,8 @@ export default function Navigation() {
               <a href="#about" className="text-gray-700 font-medium">
                 About
               </a>
-              <a href="https://calendly.com/jay-agmen-marketing/30min" target="_blank" rel="noopener noreferrer">
-                <Button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium w-fit">
+              <a href="https://calendly.com/jay-agmen-marketing/30min" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                <Button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium w-fit">
                   Schedule a call →
                 </Button>
               </a>

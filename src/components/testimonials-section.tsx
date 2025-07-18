@@ -9,53 +9,47 @@ export default function TestimonialsSection() {
       content:
         "Before working with Agmen Marketing, we spent so much time chasing leads that went nowhere. Now their team actually closes the prospects before they come to us and it saves us hours every week and boosts our sales.",
       rating: 5,
-      avatar:
-        "https://images.unsplash.com/photo-1494790108755-2616b9c5e8e1?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80",
+      avatar: "/images/emily-carter.jpg", 
     },
     {
       name: "Jason Mitchell",
       title: "Agency Manager",
       content:
-        "I wasn&apos;t sure how it would work, but their agents do a great job qualifying and closing leads. Getting weekly updates keeps me in the loop and builds a lot of trust.",
+        "I was not sure how it would work, but their agents do a great job qualifying and closing leads. Getting weekly updates keeps me in the loop and builds a lot of trust.",
       rating: 5,
-      avatar:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+      avatar: "/images/jason-mitchel.jpg",
     },
     {
       name: "Sandra Lopez",
       title: "Marketing Director",
       content:
-        "These guys really get how insurance sales work. They don&apos;t just hand over cold leads, they nurture and close them. Our conversion rate has improved a lot.",
+        "These guys really get how insurance sales work. They don not just hand over cold leads, they nurture and close them. Our conversion rate has improved a lot.",
       rating: 5,
-      avatar:
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80",
+      avatar: "/images/sandra-lopez.jpg",
     },
     {
       name: "Robert Nguyen",
       title: "Principal Agent",
       content:
-        "It&apos;s like having an extra sales team without the hassle of hiring. The clients they send us are already interested and ready to move forward.",
+        "It is like having an extra sales team without the hassle of hiring. The clients they send us are already interested and ready to move forward.",
       rating: 5,
-      avatar:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&q=80",
+      avatar: "/images/robert.jpg",
     },
     {
       name: "Linda Thompson",
       title: "Founder",
       content:
-        "The no-contract option made it easy to try them out. Now I can&apos;t imagine going back to buying unqualified leads. This is a game changer.",
+        "The no-contract option made it easy to try them out. Now I can not imagine going back to buying unqualified leads. This is a game changer.",
       rating: 5,
-      avatar:
-        "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=1061&q=80",
+      avatar: "/images/linda-thompson.jpg",
     },
     {
       name: "David Patel",
       title: "CEO",
       content:
-        "Since we started, our sales cycle has gotten much shorter. Their team&apos;s ability to close before handing off really speeds things up.",
+        "Since we started, our sales cycle has gotten much shorter. Their team members ability to close before handing off really speeds things up.",
       rating: 5,
-      avatar:
-        "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=1074&q=80",
+      avatar: "/images/david-patel.jpg",
     },
   ]
 
@@ -65,7 +59,7 @@ export default function TestimonialsSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Proof from Experience</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Don&apos;t just take our word for it. Here&apos;s what our clients say about working with Agmen Marketing.
+            Don not just take our word for it. Here is what our clients say about working with Agmen Marketing.
           </p>
         </div>
 
@@ -83,11 +77,12 @@ export default function TestimonialsSection() {
 
               <div className="flex items-center">
                 <Image
-                  src={ "/placeholder.svg"}
-                  alt={testimonial.name}
+                  src={testimonial.avatar}
+                  alt={`${testimonial.name} avatar`}
                   width={48}
                   height={48}
                   className="w-12 h-12 rounded-full mr-4 object-cover"
+                  unoptimized
                 />
                 <div>
                   <div className="font-semibold text-gray-900">{testimonial.name}</div>
@@ -99,7 +94,7 @@ export default function TestimonialsSection() {
         </div>
 
         {/* Bottom Section */}
-        <div className="bg-gradient-to-r from-amber-100 via-orange-100 to-amber-100 rounded-3xl p-12">
+        <div className="bg-gradient-to-r from-blue-100 via-blue-100 to-blue-100 rounded-3xl p-12">
           <div className="text-center">
             <h3 className="text-3xl font-bold text-gray-900 mb-6">We share everything (except our cookies)</h3>
             <div className="grid md:grid-cols-3 gap-8">

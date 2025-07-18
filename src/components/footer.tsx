@@ -6,7 +6,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <div className="text-2xl font-bold">
-              agmen<span className="text-orange-500">.</span>
+              agmen<span className="text-blue-500">.</span>
             </div>
             <p className="text-gray-400 leading-relaxed">
               We deliver ready-to-sign insurance clients, not just leads. Your partner in scaling your insurance agency.

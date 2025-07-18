@@ -41,43 +41,14 @@ export default function ServicesSection() {
   return (
     <section className="py-20 bg-stone-50">
       <div className="container mx-auto px-4">
-        {/* <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Some recent creations</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We create a custom system designed around the insurance services you offer, turning leads into
-            pre-qualified, closed clients ready for your agency.
-          </p>
-        </div> */}
-
-        {/* Portfolio Grid */}
-        {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-          {portfolioItems.map((item, index) => (
-            <div key={index} className="group cursor-pointer">
-              <div className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300">
-                <div className="aspect-video bg-gradient-to-br from-blue-100 to-purple-100 relative overflow-hidden">
-                  <img
-                    src={item.image || "/placeholder.svg"}
-                    alt={item.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h3>
-                  <p className="text-gray-600">{item.description}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div> */}
-
         {/* Our Services */}
         <div className="bg-white rounded-3xl p-12">
           <h3 className="text-3xl font-bold text-gray-900 mb-12 text-center">Our Process</h3>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">
                   1
                 </div>
               </div>
@@ -89,28 +60,28 @@ export default function ServicesSection() {
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">
                   2
                 </div>
               </div>
               <h4 className="text-xl font-bold text-gray-900 mb-4">Custom Offers & Closing</h4>
               <p className="text-gray-600 leading-relaxed">
-                You create personalized offers based on each prospect&apos;s needs. Our agents then book appointments and
+                You create personalized offers based on each prospects needs. Our agents then book appointments and
                 help close the sale before handing the client over to you.
               </p>
             </div>
 
             <div className="text-center">
-              <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
-                <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold">
                   3
                 </div>
               </div>
               <h4 className="text-xl font-bold text-gray-900 mb-4">Transparent Weekly Reporting</h4>
               <p className="text-gray-600 leading-relaxed">
                 To build trust and keep you informed, we send a detailed letter to your office every week outlining the
-                new clients we&apos;ve delivered.
+                new clients we have delivered.
               </p>
             </div>
           </div>

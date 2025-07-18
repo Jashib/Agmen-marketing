@@ -31,7 +31,7 @@ export default function AboutSection() {
                     />
                   </div>
                 </div>
-                <div className="bg-orange-500 rounded-lg p-4">
+                <div className="bg-blue-500 rounded-lg p-4">
                   <div className="text-center">
                     <div className="text-3xl font-bold">95%</div>
                     <div className="text-sm">Close Rate</div>
@@ -51,9 +51,9 @@ export default function AboutSection() {
 
             <div className="space-y-6">
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">We Don&apos;t Just Market — We Close.</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">We Don not Just Market — We Close.</h3>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  At Agmen Marketing, we&apos;re more than a marketing provider, we&apos;re your partner in scaling your insurance
+                  At Agmen Marketing, we are more than a marketing provider, we are your partner in scaling your insurance
                   agency with pre-closed clients, not just leads.
                 </p>
               </div>
@@ -65,7 +65,7 @@ export default function AboutSection() {
               </p>
             </div>
 
-            <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 text-lg font-semibold rounded-full">
+            <Button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 text-lg font-semibold rounded-full">
               Learn More About Us →
             </Button>
           </div>
@@ -76,13 +76,13 @@ export default function AboutSection() {
           <div className="max-w-4xl mx-auto text-center">
             <h3 className="text-3xl font-bold text-gray-900 mb-6">Our Philosophy: Flexibility, Built on Trust</h3>
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              We understand that no one wants to be locked into something that doesn&apos;t deliver. That&apos;s why you can
+              We understand that no one wants to be locked into something that does not deliver. That is why you can
               choose to work with us with or without a contract. Whether you prefer structure or flexibility, our focus
               stays the same: delivering real results, real clients, and a system that proves its value on its own.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 text-lg font-semibold rounded-full">
+              <Button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 text-lg font-semibold rounded-full">
                 Start Without Contract →
               </Button>
               <Button

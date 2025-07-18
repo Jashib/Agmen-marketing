@@ -1,192 +1,155 @@
 "use client"
 
 import type React from "react"
-import Image from "next/image"
-
-import { useState } from "react"
-import { Button } from "@/components/ui/button"
-import { Star, ArrowRight } from "lucide-react"
+import { Star, ArrowRight, Play, Zap, Target, TrendingUp } from "lucide-react"
 
 export default function HeroSection() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    company: "",
-  })
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    console.log("Form submitted:", formData)
-  }
-
   return (
-    <section className="bg-stone-50 py-20 lg:py-32">
-      <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+    <section className="bg-stone-50 py-20 lg:py-32 relative overflow-hidden">
+      {/* Background animated elements */}
+      <div className="absolute top-20 left-10 w-32 h-32 bg-blue-200/30 rounded-full blur-xl animate-pulse"></div>
+      <div className="absolute bottom-20 right-10 w-48 h-48 bg-blue-200/20 rounded-full blur-2xl animate-pulse delay-1000"></div>
+
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left Column - Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 order-1 lg:order-1">
             <div className="space-y-6">
-              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                We Don&apos;t Just Send Leads - We Deliver <span className="text-orange-500">Ready-to-Sign</span> Insurance
-                Clients
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                We Don not Just Send Leads - We Deliver{" "}
+                <span className="text-blue-500 relative">
+                  Ready-to-Sign
+                  <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full transform scale-x-0 animate-[scaleX_2s_ease-in-out_0.5s_forwards] origin-left"></div>
+                </span>{" "}
+                Insurance Clients
               </h1>
 
-              <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
+              <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-lg">
                 Tired of chasing cold leads? Our licensed agents qualify and close prospects for you - so you get
-                clients, not just contacts. It&apos;s the last marketing system your insurance agency will ever need.
+                clients, not just contacts. It is the last marketing system your insurance agency will ever need.
               </p>
 
               <div className="space-y-4">
-                <p className="text-lg font-semibold text-gray-900">
-                  <span className="text-orange-500">Our goal:</span> To be the last marketing agency you&apos;ll ever need to
+                <p className="text-base md:text-lg font-semibold text-gray-900">
+                  <span className="text-blue-500">Our goal:</span> To be the last marketing agency you will ever need to
                   hire. Ever.
                 </p>
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 text-lg font-semibold rounded-full">
-                Case studies <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-            </div>
+            {/* CTA Button and Google Rating in same row */}
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-8">
+                <a 
+                  href="https://calendly.com/jay-agmen-marketing/30min" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="cursor-pointer"
+                >
+                  <button className="group relative bg-blue-500 hover:bg-white text-white hover:text-blue-500 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg border-2 border-blue-500 hover:border-blue-500 overflow-hidden">
+                    <span className="relative z-10 flex items-center">
+                      Grow your business with us
+                      <div className="ml-3 w-6 h-6 bg-white group-hover:bg-blue-500 rounded-full flex items-center justify-center transition-all duration-300">
+                        <ArrowRight className="w-4 h-4 text-blue-500 group-hover:text-white transition-all duration-300 group-hover:translate-x-0.5" />
+                      </div>
+                    </span>
+                  </button>
+                </a>
 
-            {/* Google Rating */}
-            <div className="flex items-center space-x-4 pt-4">
-              <div className="flex items-center space-x-2">
-                <span className="text-2xl font-bold text-blue-600">Google</span>
-                <div className="flex">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                  ))}
+              {/* Google Rating */}
+              <div className="flex items-center space-x-3">
+                <div className="flex items-center space-x-2">
+                  <span className="text-xl md:text-2xl font-bold text-blue-600">Google</span>
+                  <div className="flex space-x-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className="w-4 h-4 md:w-5 md:h-5 text-yellow-400 fill-current animate-[bounce_1s_ease-in-out_infinite] delay-[var(--delay)]"
+                        style={{ "--delay": `${i * 0.1}s` } as React.CSSProperties}
+                      />
+                    ))}
+                  </div>
+                  <span className="text-base md:text-lg font-semibold">4.8</span>
                 </div>
-                <span className="text-lg font-semibold">4.8</span>
               </div>
             </div>
           </div>
 
-          {/* Right Column - Lead Capture Form */}
-          <div className="lg:pl-8">
-            <div className="bg-white rounded-2xl p-8 shadow-xl border border-gray-100 max-w-md mx-auto">
-              <div className="mb-6">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Get a free ROI analysis</h3>
-                <p className="text-gray-600">See how we can 3x your insurance sales in 90 days</p>
+          {/* Right Column - Modern UI Design with floating illustration */}
+          <div className="relative order-2 lg:order-2">
+            <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] mx-auto">
+              {/* Background subtle gradients */}
+              <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-blue-50 rounded-3xl opacity-70"></div>
+              
+              {/* Main illustration */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <img
+                  src="/images/rocket-illustration.png"
+                  alt="Digital marketing growth illustration"
+                  className="w-4/5 h-4/5 object-contain z-20 animate-[float_4s_ease-in-out_infinite]"
+                />
               </div>
-
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <label htmlFor="fullName" className="block text-sm font-medium text-gray-700 mb-1">
-                    Full Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="fullName"
-                    name="fullName"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors"
-                    placeholder="Enter your full name"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="businessEmail" className="block text-sm font-medium text-gray-700 mb-1">
-                    Business Email *
-                  </label>
-                  <input
-                    type="email"
-                    id="businessEmail"
-                    name="businessEmail"
-                    value={formData.email}
-                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors"
-                    placeholder="your@company.com"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="phoneNumber" className="block text-sm font-medium text-gray-700 mb-1">
-                    Phone Number *
-                  </label>
-                  <input
-                    type="tel"
-                    id="phoneNumber"
-                    name="phoneNumber"
-                    value={formData.phone}
-                    onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors"
-                    placeholder="(555) 123-4567"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="agencyName" className="block text-sm font-medium text-gray-700 mb-1">
-                    Agency Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="agencyName"
-                    name="agencyName"
-                    value={formData.company}
-                    onChange={(e) => setFormData({ ...formData, company: e.target.value })}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors"
-                    placeholder="Your Insurance Agency"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="monthlyLeads" className="block text-sm font-medium text-gray-700 mb-1">
-                    Current Monthly Lead Volume
-                  </label>
-                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-colors">
-                    <option value="">Select range</option>
-                    <option value="0-50">0-50 leads</option>
-                    <option value="51-100">51-100 leads</option>
-                    <option value="101-250">101-250 leads</option>
-                    <option value="250+">250+ leads</option>
-                  </select>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 px-6 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl"
-                >
-                  Get My Free ROI Analysis →
-                </button>
-              </form>
-
-              <div className="mt-6 text-center">
-                <p className="text-xs text-gray-500 mb-3">
-                  By submitting this form, you agree to our{" "}
-                  <a href="#" className="text-orange-500 hover:underline">
-                    Privacy Policy
-                  </a>{" "}
-                  and{" "}
-                  <a href="#" className="text-orange-500 hover:underline">
-                    Terms of Service
-                  </a>
-                </p>
-
-                <div className="flex items-center justify-center space-x-2 text-sm text-gray-600">
-                  <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                    <path
-                      fillRule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clipRule="evenodd"
-                    />
-                  </svg>
-                  <span>No spam. Unsubscribe anytime.</span>
+              
+              {/* Floating UI elements */}
+              <div className="absolute top-8 right-12 z-30">
+                <div className="bg-white shadow-lg rounded-lg p-3 animate-[float_3s_ease-in-out_infinite]">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-8 h-8 bg-blue-100 rounded-md flex items-center justify-center">
+                      <svg className="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="text-xs font-bold text-gray-700">95% Close Rate</p>
+                      <p className="text-[10px] text-gray-500">This month</p>
+                    </div>
+                  </div>
                 </div>
               </div>
+              
+              <div className="absolute bottom-12 left-8 z-30">
+                <div className="bg-white shadow-lg rounded-lg p-3 animate-[float_4s_ease-in-out_infinite_1s]">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-8 h-8 bg-green-100 rounded-md flex items-center justify-center">
+                      <svg className="w-5 h-5 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="text-xs font-bold text-gray-700">500+ Clients</p>
+                      <p className="text-[10px] text-gray-500">Delivered</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="absolute top-1/2 right-4 z-30 transform -translate-y-1/2">
+                <div className="bg-white shadow-lg rounded-lg p-3 animate-[float_3.5s_ease-in-out_infinite_0.5s]">
+                  <div className="flex items-center space-x-2">
+                    <div className="w-8 h-8 bg-blue-100 rounded-md flex items-center justify-center">
+                      <svg className="w-5 h-5 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M12 7a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0V8.414l-4.293 4.293a1 1 0 01-1.414 0L8 10.414l-4.293 4.293a1 1 0 01-1.414-1.414l5-5a1 1 0 011.414 0L11 10.586 14.586 7H12z" clipRule="evenodd" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="text-xs font-bold text-gray-700">$50M+ Revenue</p>
+                      <p className="text-[10px] text-gray-500">Generated</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Decorative elements */}
+              <div className="absolute top-1/4 right-1/4 w-3 h-3 bg-blue-400 rounded-full animate-ping"></div>
+              <div className="absolute bottom-1/3 left-1/3 w-2 h-2 bg-blue-400 rounded-full animate-ping delay-1000"></div>
+              <div className="absolute top-2/3 right-1/3 w-2 h-2 bg-blue-400 rounded-full animate-ping delay-700"></div>
+              
+              {/* Colored shapes in background */}
+              <div className="absolute top-12 left-12 w-12 h-12 bg-blue-100 rounded-lg transform rotate-12 opacity-50"></div>
+              <div className="absolute bottom-12 right-12 w-16 h-16 bg-blue-100 rounded-full opacity-50"></div>
+              <div className="absolute top-1/2 left-1/3 w-8 h-8 bg-blue-100 rounded-lg transform -rotate-12 opacity-40"></div>
             </div>
           </div>
         </div>
-
-        {/* Bottom section with gradient */}
       </div>
     </section>
   )
