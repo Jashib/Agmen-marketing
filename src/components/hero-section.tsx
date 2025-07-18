@@ -2,6 +2,7 @@
 
 import type React from "react"
 import { Star, ArrowRight, Play, Zap, Target, TrendingUp } from "lucide-react"
+import { Star, ArrowRight, Play, Zap, Target, TrendingUp } from "lucide-react"
 
 export default function HeroSection() {
   return (
@@ -13,6 +14,7 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left Column - Content */}
+          <div className="space-y-8 order-1 lg:order-1">
           <div className="space-y-8 order-1 lg:order-1">
             <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
@@ -69,9 +71,33 @@ export default function HeroSection() {
                     ))}
                   </div>
                   <span className="text-base md:text-lg font-semibold">4.8</span>
+              {/* Google Rating */}
+              <div className="flex items-center space-x-3">
+                <div className="flex items-center space-x-2">
+                  <span className="text-xl md:text-2xl font-bold text-blue-600">Google</span>
+                  <div className="flex space-x-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className="w-4 h-4 md:w-5 md:h-5 text-yellow-400 fill-current animate-[bounce_1s_ease-in-out_infinite] delay-[var(--delay)]"
+                        style={{ "--delay": `${i * 0.1}s` } as React.CSSProperties}
+                      />
+                    ))}
+                  </div>
+                  <span className="text-base md:text-lg font-semibold">4.8</span>
                 </div>
               </div>
             </div>
+
+            {/* Secondary CTA */}
+            {/* <div className="pt-4">
+              <button className="group flex items-center text-gray-600 hover:text-orange-500 transition-colors duration-300">
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg flex items-center justify-center mr-3 group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+                  <Play className="w-4 h-4 md:w-5 md:h-5 text-orange-500 ml-0.5" />
+                </div>
+                <span className="font-medium text-sm md:text-base">Watch how it works</span>
+              </button>
+            </div> */}
           </div>
 
           {/* Right Column - Modern UI Design with floating illustration */}
@@ -136,6 +162,13 @@ export default function HeroSection() {
                     </div>
                   </div>
                 </div>
+
+                {/* Enhanced floating particles - More and Bigger */}
+                <div className="absolute top-8 md:top-16 right-8 md:right-16 w-2 h-2 md:w-4 md:h-4 bg-orange-400 rounded-full animate-ping"></div>
+                <div className="absolute bottom-12 md:bottom-20 left-12 md:left-20 w-1.5 h-1.5 md:w-3 md:h-3 bg-blue-400 rounded-full animate-ping delay-500"></div>
+                <div className="absolute top-20 md:top-32 left-6 md:left-12 w-1 h-1 md:w-2.5 md:h-2.5 bg-green-400 rounded-full animate-ping delay-1000"></div>
+                <div className="absolute bottom-20 md:bottom-32 right-6 md:right-12 w-2 h-2 md:w-3.5 md:h-3.5 bg-purple-400 rounded-full animate-ping delay-1500"></div>
+                <div className="absolute top-1/2 left-1/4 w-1.5 h-1.5 md:w-3 md:h-3 bg-pink-400 rounded-full animate-ping delay-2000"></div>
               </div>
               
               {/* Decorative elements */}
@@ -149,6 +182,48 @@ export default function HeroSection() {
               <div className="absolute top-1/2 left-1/3 w-8 h-8 bg-blue-100 rounded-lg transform -rotate-12 opacity-40"></div>
             </div>
           </div>
+        </div>
+
+        {/* Bottom section with gradient and company logos */}
+        <div className="mt-16 md:mt-20">
+          {/* <div className="bg-gradient-to-r from-amber-100 via-orange-100 to-amber-100 rounded-3xl p-8 md:p-12">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">3000+ companies</h3>
+                <p className="text-base md:text-lg text-gray-700 mb-6">trust us with their growth</p>
+                <div className="flex items-center space-x-4 md:space-x-6">
+                  <div className="text-center">
+                    <div className="text-2xl md:text-3xl font-bold text-orange-500">$50M+</div>
+                    <div className="text-xs md:text-sm text-gray-600">Revenue Generated</div>
+                  </div>
+                  <div className="text-center">
+                    <div className="text-2xl md:text-3xl font-bold text-orange-500">500+</div>
+                    <div className="text-xs md:text-sm text-gray-600">Clients Delivered</div>
+                  </div>
+                </div>
+              </div>
+              <div className="text-center md:text-right">
+                <p className="text-base md:text-lg text-gray-700 mb-4">Trusted by leading companies</p>
+                <div className="flex justify-center md:justify-end items-center space-x-4 md:space-x-6 opacity-60">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
+                    alt="Microsoft"
+                    className="h-6 md:h-8 w-auto grayscale hover:grayscale-0 transition-all duration-300 hover:scale-110"
+                  />
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+                    alt="Google"
+                    className="h-6 md:h-8 w-auto grayscale hover:grayscale-0 transition-all duration-300 hover:scale-110"
+                  />
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
+                    alt="Amazon"
+                    className="h-4 md:h-6 w-auto grayscale hover:grayscale-0 transition-all duration-300 hover:scale-110"
+                  />
+                </div>
+              </div>
+            </div>
+          </div> */}
         </div>
       </div>
     </section>
