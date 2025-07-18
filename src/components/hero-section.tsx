@@ -2,7 +2,6 @@
 
 import type React from "react"
 import { Star, ArrowRight, Play, Zap, Target, TrendingUp } from "lucide-react"
-import { Star, ArrowRight, Play, Zap, Target, TrendingUp } from "lucide-react"
 
 export default function HeroSection() {
   return (
@@ -15,10 +14,9 @@ export default function HeroSection() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           {/* Left Column - Content */}
           <div className="space-y-8 order-1 lg:order-1">
-          <div className="space-y-8 order-1 lg:order-1">
             <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                We Don not Just Send Leads - We Deliver{" "}
+                We Don&apos;t Just Send Leads - We Deliver{" "}
                 <span className="text-blue-500 relative">
                   Ready-to-Sign
                   <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full transform scale-x-0 animate-[scaleX_2s_ease-in-out_0.5s_forwards] origin-left"></div>
@@ -28,49 +26,35 @@ export default function HeroSection() {
 
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-lg">
                 Tired of chasing cold leads? Our licensed agents qualify and close prospects for you - so you get
-                clients, not just contacts. It is the last marketing system your insurance agency will ever need.
+                clients, not just contacts. It&apos;s the last marketing system your insurance agency will ever need.
               </p>
 
               <div className="space-y-4">
                 <p className="text-base md:text-lg font-semibold text-gray-900">
-                  <span className="text-blue-500">Our goal:</span> To be the last marketing agency you will ever need to
+                  <span className="text-blue-500">Our goal:</span> To be the last marketing agency you&apos;ll ever need to
                   hire. Ever.
                 </p>
               </div>
             </div>
 
             {/* CTA Button and Google Rating in same row */}
-              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-8">
-                <a 
-                  href="https://calendly.com/jay-agmen-marketing/30min" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="cursor-pointer"
-                >
-                  <button className="group relative bg-blue-500 hover:bg-white text-white hover:text-blue-500 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg border-2 border-blue-500 hover:border-blue-500 overflow-hidden">
-                    <span className="relative z-10 flex items-center">
-                      Grow your business with us
-                      <div className="ml-3 w-6 h-6 bg-white group-hover:bg-blue-500 rounded-full flex items-center justify-center transition-all duration-300">
-                        <ArrowRight className="w-4 h-4 text-blue-500 group-hover:text-white transition-all duration-300 group-hover:translate-x-0.5" />
-                      </div>
-                    </span>
-                  </button>
-                </a>
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 sm:gap-8">
+              <a 
+                href="https://calendly.com/jay-agmen-marketing/30min" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="cursor-pointer"
+              >
+                <button className="group relative bg-blue-500 hover:bg-white text-white hover:text-blue-500 px-6 md:px-8 py-3 md:py-4 text-base md:text-lg font-semibold rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg border-2 border-blue-500 hover:border-blue-500 overflow-hidden">
+                  <span className="relative z-10 flex items-center">
+                    Grow your business with us
+                    <div className="ml-3 w-6 h-6 bg-white group-hover:bg-blue-500 rounded-full flex items-center justify-center transition-all duration-300">
+                      <ArrowRight className="w-4 h-4 text-blue-500 group-hover:text-white transition-all duration-300 group-hover:translate-x-0.5" />
+                    </div>
+                  </span>
+                </button>
+              </a>
 
-              {/* Google Rating */}
-              <div className="flex items-center space-x-3">
-                <div className="flex items-center space-x-2">
-                  <span className="text-xl md:text-2xl font-bold text-blue-600">Google</span>
-                  <div className="flex space-x-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className="w-4 h-4 md:w-5 md:h-5 text-yellow-400 fill-current animate-[bounce_1s_ease-in-out_infinite] delay-[var(--delay)]"
-                        style={{ "--delay": `${i * 0.1}s` } as React.CSSProperties}
-                      />
-                    ))}
-                  </div>
-                  <span className="text-base md:text-lg font-semibold">4.8</span>
               {/* Google Rating */}
               <div className="flex items-center space-x-3">
                 <div className="flex items-center space-x-2">
@@ -88,16 +72,6 @@ export default function HeroSection() {
                 </div>
               </div>
             </div>
-
-            {/* Secondary CTA */}
-            {/* <div className="pt-4">
-              <button className="group flex items-center text-gray-600 hover:text-orange-500 transition-colors duration-300">
-                <div className="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full shadow-lg flex items-center justify-center mr-3 group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
-                  <Play className="w-4 h-4 md:w-5 md:h-5 text-orange-500 ml-0.5" />
-                </div>
-                <span className="font-medium text-sm md:text-base">Watch how it works</span>
-              </button>
-            </div> */}
           </div>
 
           {/* Right Column - Modern UI Design with floating illustration */}
@@ -162,13 +136,6 @@ export default function HeroSection() {
                     </div>
                   </div>
                 </div>
-
-                {/* Enhanced floating particles - More and Bigger */}
-                <div className="absolute top-8 md:top-16 right-8 md:right-16 w-2 h-2 md:w-4 md:h-4 bg-orange-400 rounded-full animate-ping"></div>
-                <div className="absolute bottom-12 md:bottom-20 left-12 md:left-20 w-1.5 h-1.5 md:w-3 md:h-3 bg-blue-400 rounded-full animate-ping delay-500"></div>
-                <div className="absolute top-20 md:top-32 left-6 md:left-12 w-1 h-1 md:w-2.5 md:h-2.5 bg-green-400 rounded-full animate-ping delay-1000"></div>
-                <div className="absolute bottom-20 md:bottom-32 right-6 md:right-12 w-2 h-2 md:w-3.5 md:h-3.5 bg-purple-400 rounded-full animate-ping delay-1500"></div>
-                <div className="absolute top-1/2 left-1/4 w-1.5 h-1.5 md:w-3 md:h-3 bg-pink-400 rounded-full animate-ping delay-2000"></div>
               </div>
               
               {/* Decorative elements */}
@@ -184,20 +151,21 @@ export default function HeroSection() {
           </div>
         </div>
 
-        {/* Bottom section with gradient and company logos */}
+        {/* Bottom section with gradient and company logos - COMMENTED OUT FOR NOW */}
+        {/* 
         <div className="mt-16 md:mt-20">
-          {/* <div className="bg-gradient-to-r from-amber-100 via-orange-100 to-amber-100 rounded-3xl p-8 md:p-12">
+          <div className="bg-gradient-to-r from-blue-100 via-blue-100 to-blue-100 rounded-3xl p-8 md:p-12">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">3000+ companies</h3>
                 <p className="text-base md:text-lg text-gray-700 mb-6">trust us with their growth</p>
                 <div className="flex items-center space-x-4 md:space-x-6">
                   <div className="text-center">
-                    <div className="text-2xl md:text-3xl font-bold text-orange-500">$50M+</div>
+                    <div className="text-2xl md:text-3xl font-bold text-blue-500">$50M+</div>
                     <div className="text-xs md:text-sm text-gray-600">Revenue Generated</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl md:text-3xl font-bold text-orange-500">500+</div>
+                    <div className="text-2xl md:text-3xl font-bold text-blue-500">500+</div>
                     <div className="text-xs md:text-sm text-gray-600">Clients Delivered</div>
                   </div>
                 </div>
@@ -223,8 +191,9 @@ export default function HeroSection() {
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
+        */}
       </div>
     </section>
   )
