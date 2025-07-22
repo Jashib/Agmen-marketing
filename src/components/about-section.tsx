@@ -65,9 +65,9 @@ export default function AboutSection() {
               </p>
             </div>
 
-            <Button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 text-lg font-semibold rounded-full">
+            {/* <Button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 text-lg font-semibold rounded-full">
               Learn More About Us →
-            </Button>
+            </Button> */}
           </div>
         </div>
 
@@ -82,15 +82,17 @@ export default function AboutSection() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="https://calendly.com/jay-agmen-marketing/30min" target="_blank" rel="noopener noreferrer" className="cursor-pointer">
               <Button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 text-lg font-semibold rounded-full">
                 Start Without Contract →
               </Button>
-              <Button
+              </a>
+              {/* <Button
                 variant="outline"
                 className="border-gray-300 text-gray-700 hover:bg-gray-50 px-8 py-4 text-lg font-semibold rounded-full bg-transparent"
               >
                 View Contract Options
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
