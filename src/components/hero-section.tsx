@@ -16,7 +16,7 @@ export default function HeroSection() {
           <div className="space-y-8 order-1 lg:order-1">
             <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                We Don&apos;t Just Send Leads - We Deliver{" "}
+                We Do not Just Send Leads - We Deliver{" "}
                 <span className="text-blue-500 relative">
                   Ready-to-Sign
                   <div className="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-blue-400 to-blue-600 rounded-full transform scale-x-0 animate-[scaleX_2s_ease-in-out_0.5s_forwards] origin-left"></div>
@@ -26,12 +26,12 @@ export default function HeroSection() {
 
               <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-lg">
                 Tired of chasing cold leads? Our licensed agents qualify and close prospects for you - so you get
-                clients, not just contacts. It&apos;s the last marketing system your insurance agency will ever need.
+                clients, not just contacts. It is the last marketing system your insurance agency will ever need.
               </p>
 
               <div className="space-y-4">
                 <p className="text-base md:text-lg font-semibold text-gray-900">
-                  <span className="text-blue-500">Our goal:</span> To be the last marketing agency you&apos;ll ever need to
+                  <span className="text-blue-500">Our goal:</span> To be the last marketing agency you will ever need to
                   hire. Ever.
                 </p>
               </div>

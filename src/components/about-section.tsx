@@ -51,7 +51,7 @@ export default function AboutSection() {
 
             <div className="space-y-6">
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">We Don not Just Market — We Close.</h3>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">We Do not Just Market — We Close.</h3>
                 <p className="text-lg text-gray-600 leading-relaxed">
                   At Agmen Marketing, we are more than a marketing provider, we are your partner in scaling your insurance
                   agency with pre-closed clients, not just leads.

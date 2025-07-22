@@ -23,7 +23,7 @@ export default function TestimonialsSection() {
       name: "Sandra Lopez",
       title: "Marketing Director",
       content:
-        "These guys really get how insurance sales work. They don not just hand over cold leads, they nurture and close them. Our conversion rate has improved a lot.",
+        "These guys really get how insurance sales work. They do not just hand over cold leads, they nurture and close them. Our conversion rate has improved a lot.",
       rating: 5,
       avatar: "/images/sandra-lopez.jpg",
     },
@@ -59,7 +59,7 @@ export default function TestimonialsSection() {
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">Proof from Experience</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Don not just take our word for it. Here is what our clients say about working with Agmen Marketing.
+            Do not just take our word for it. Here is what our clients say about working with Agmen Marketing.
           </p>
         </div>
 

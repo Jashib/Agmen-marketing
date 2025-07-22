@@ -29,7 +29,7 @@ export default function CTASection() {
               <div className="bg-green-500/20 border border-green-400/30 rounded-2xl p-6 backdrop-blur-sm max-w-2xl mx-auto">
                 <h4 className="text-xl font-bold mb-2">🎯 Our 90-Day Growth Guarantee</h4>
                 <p className="text-green-100">
-                  If we don not deliver at least 3 qualified, ready-to-sign clients in your first 90 days, we will work for
+                  If we do not deliver at least 3 qualified, ready-to-sign clients in your first 90 days, we will work for
                   free until we do. That is how confident we are in our system.
                 </p>
               </div>
